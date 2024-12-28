@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">Febri Valentina</a>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="produk.html">Product</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <h2>Temukan Product Luar Biasa di Toko Kami</h2>
+          <p>Belanja tren dan penawaran terbaru dengan mudah!!</p>
+          <button onclick="scrollToProducts()">Shop Now</button>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="container">
+          <h2>featured product</h2>
+          <div class="product-list">
+            <div class="product">
+              <img src="v5.jpg" alt="Product 1" />
+              <h3>Product 1</h3>
+              <p>$29.99</p>
+              <button>Add to Cart</button>
+            </div>
+            <div class="product">
+              <img src="v2.jpg" alt="Product 2" />
+              <h3>Product 2</h3>
+              <p>$39.99</p>
+              <button>Add to Cart</button>
+            </div>
+            <div class="product">
+              <img src="v4.png" alt="Product 3" />
+              <h3>Product 3</h3>
+              <p>$19.99</p>
+              <button>Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 FEBRI VALENTINA</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <script type="text/javascript">
+      // deklarasi tombol dan menu
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      // membuat event click
+      // pada saat tombol di click, tambahkan class aktif pada class menu
+      // saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>
